@@ -34,4 +34,21 @@ Este endpoint retorna un JSON con la siguiente estructura
     }
 ]
 
+Se crearon pruebas unitarias, para ejecutarlas escriba el comando "python tests.py"
+
 ## Segundo requerimiento
+Para llevar a cabo el segundo requerimiento se penso en agregar una tabla intermedia entre los inmuebles y los usuarios llamada "like"
+
+Diagrama entidad relacion disponible en: https://ibb.co/YpJfvLx
+Esta solucion resolveria la necesidad de almacenar en base de datos los "me gusta" que cada usuario le da a un inmueble.
+
+.. code-block:: bash
+
+    CREATE TABLE like(
+        id INT NOT NULL,
+        property_id INT NOT NULL,
+        user_id INT NOT NULL,
+        PRIMARY KEY(id),
+        FOREIGN KEY (property_id) REFERENCES property(id),
+        FOREIGN KEY (user_id) REFERENCES auth_user(id)
+    );
