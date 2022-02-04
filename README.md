@@ -16,6 +16,7 @@ Para llevar a cabo el desarrollo de esta prueba se utilizara Docker, Python, Fla
 
 ## Primer requerimiento
 El codigo fuente de este requerimiento se encuentra en el archivo "controlador.py"
+
 Este endpoint retorna un JSON con la siguiente estructura
 
 .. code-block:: bash
