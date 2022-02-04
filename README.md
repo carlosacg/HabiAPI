@@ -17,22 +17,23 @@ Para llevar a cabo el desarrollo de esta prueba se utilizara Docker, Python, Fla
 ## Primer requerimiento
 El codigo fuente de este requerimiento se encuentra en el archivo "controlador.py"
 Este endpoint retorna un JSON con la siguiente estructura
-[
-    {
-        "address": "calle 95 # 78 - 49",
-        "city": "bogota",
-        "description": "hermoso acabado, listo para estrenar",
-        "price": 120000000,
-        "status": "pre_venta"
-    },
-    {
-        "address": "calle 95 # 78 - 123",
-        "city": "bogota",
-        "description": "hermoso acabado, listo para estrenar",
-        "price": 120000000,
-        "status": "pre_venta"
-    }
-]
+.. code-block:: bash
+    [
+        {
+            "address": "calle 95 # 78 - 49",
+            "city": "bogota",
+            "description": "hermoso acabado, listo para estrenar",
+            "price": 120000000,
+            "status": "pre_venta"
+        },
+        {
+            "address": "calle 95 # 78 - 123",
+            "city": "bogota",
+            "description": "hermoso acabado, listo para estrenar",
+            "price": 120000000,
+            "status": "pre_venta"
+        }
+    ]
 
 Se crearon pruebas unitarias, para ejecutarlas escriba el comando "python tests.py"
 
