@@ -57,3 +57,15 @@ Esta solucion resolveria la necesidad de almacenar en base de datos los "me gust
         FOREIGN KEY (property_id) REFERENCES property(id),
         FOREIGN KEY (user_id) REFERENCES auth_user(id)
     );
+
+
+## Puntos Extras
+El modelo actual obliga a tener que realizar JOIN entre tablas para obtener el estado actual de un inmueble.
+
+El JOIN es un operacion costosa por lo cual hace que las consultas de datos masivos sea un poco lenta.
+
+En estos casos lo mejor es desnormalizar la base de datos, agregan un campo "current_status" en la tabla property que almacena los inmuebles.
+
+Este campo se actualizaria con un disparador (trigger) cuando se ingrese un nuevo registro en la tabla status_history.
+
+De esta forma el campo current status almacenaria el valor del ultimo estado del inmueble y no tendriamos que hacer JOINs en la consulta.
