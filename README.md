@@ -1,6 +1,6 @@
 # HabiAPI
 
-Para llevar a cabo el desarrollo de esta prueba se utilizara Docker, Python, Flask y consultas SQL.
+Para llevar a cabo el desarrollo de esta prueba se utilizó Docker, Python, Flask y SQL.
 
 ## Ejecucion.
 - Instalar Docker.
