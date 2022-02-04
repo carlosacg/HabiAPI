@@ -43,6 +43,7 @@ Se crearon pruebas unitarias, para ejecutarlas escriba el comando "python tests.
 Para llevar a cabo el segundo requerimiento se penso en agregar una tabla intermedia entre los inmuebles y los usuarios llamada "like"
 
 Diagrama entidad relacion disponible en: https://ibb.co/YpJfvLx
+
 Esta solucion resolveria la necesidad de almacenar en base de datos los "me gusta" que cada usuario le da a un inmueble.
 
 .. code-block:: bash
